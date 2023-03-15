@@ -4,11 +4,12 @@ public class Sample{
 
         int n=13;
         int count=0;
+        boolean res =true;
 
-        for(int i=1;i<=n;i++){
-            if(n % i == 0) count++;
+        for(int i=2;i<n/2;i++){
+            if(n % i == 0) res = false;
         }
-        if(count== 2) System.out.println("prime");
+        if(res ==true) System.out.println("prime");
         else System.out.println("Not prime");
     }
 }
